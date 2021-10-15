@@ -17,10 +17,18 @@ namespace SistemaBuscador.Controllers
         {
             _logger = logger;
         }
-
         public IActionResult Index()
         {
             return View();
+        }
+        [HttpPost]
+        public IActionResult Login(LoginViewModel model)
+        { 
+            if(!ModelState.IsValid)
+            {
+                return View("Index, model");
+            }
+            return View("Privacy");
         }
 
         public IActionResult Privacy()
