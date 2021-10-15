@@ -1,11 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SistemaBuscador.Models;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace SistemaBuscador.Controllers
 {
@@ -23,8 +19,8 @@ namespace SistemaBuscador.Controllers
         }
         [HttpPost]
         public IActionResult Login(LoginViewModel model)
-        { 
-            if(!ModelState.IsValid)
+        {
+            if (!ModelState.IsValid)
             {
                 return View("Index, model");
             }

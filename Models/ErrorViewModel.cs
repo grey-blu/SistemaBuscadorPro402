@@ -1,5 +1,3 @@
-using System;
-
 namespace SistemaBuscador.Models
 {
     public class ErrorViewModel
