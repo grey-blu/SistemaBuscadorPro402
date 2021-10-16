@@ -22,7 +22,7 @@ namespace SistemaBuscador.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return View("Index", model");
+                return View("Index", model);
             }
             return View("Privacy");
         }
